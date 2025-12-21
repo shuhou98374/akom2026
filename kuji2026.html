@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>おみくじさいと2026</title>
+
+  <!-- 外部CSS -->
+  <link rel="stylesheet" href="C:\Users\kuros\OneDrive\ドキュメント\2026 あけおめサイト\style2026.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Yuji+Syuku&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Sawarabi+Mincho&family=Yuji+Syuku&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a class="mark" href="index2026.html">🐴</a>
+        <a class="site-title" href="index2026.html">おみくじさいと2026</a>
+      </div>
+
+      <nav>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navPanel" aria-label="メニューを開く">
+          <span class="menu-icon"></span>
+        </button>
+        <div class="nav-panel" id="navPanel" role="menu">
+          <a href="index2026.html" role="menuitem">ホーム</a>
+          <a href="#" role="menuitem">おみくじをひく</a>
+          <a href="index2026.html#contents_id" role="menuitem">コンテンツ</a>
+          <a href="index2026.html#contact" role="menuitem">SNS</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      
+
+      <section class="kuji-hero" aria-labelledby="kujiTitle">
+        <div class="kanbanpearents">
+            <div class="kanban">
+              <div class="banmoji">おみくじ授与所</div>
+              <!-- <div class="banmoji-text">おみくじさいと2026</div> -->
+          </div>
+        </div>
+        <br>
+        <div class="lead">
+          <div class="title">
+              今年はどんな年になるでしょうか？<br>
+              どんな一年にしたいでしょうか？<br><br>
+              そんなことを頭に思い浮かべて<br>
+              お好きな数字を選んでみてください！
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="kujigrid">
+
+        <a class="kujicard" href="Kuji1.html">
+          1
+        </a>
+
+        <a class="kujicard" href="Kuji2.html">
+          2
+        </a>
+
+        <a class="kujicard" href="Kuji3.html">
+          3
+        </a>
+
+        <a class="kujicard" href="Kuji4.html">
+          4
+        </a>
+
+        <a class="kujicard" href="Kuji5.html">
+          5
+        </a>
+
+        <a class="kujicard" href="Kuji6.html">
+          6
+        </a>
+
+        <a class="kujicard" href="Kuji7.html">
+          7
+        </a>
+
+        <a class="kujicard" href="Kuji8.html">
+          8
+        </a>
+
+        <a class="kujicard" href="Kuji9.html">
+          9
+        </a>
+      </section>
+
+      <section aria-labelledby="houseRun">
+        <div class="scroll-container">
+          <div class="scroll-content">
+              🐎
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      OMIKUJI-SITE&ensp;2026
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const panel = document.getElementById('navPanel');
+
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      panel.style.display = expanded ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!panel.contains(e.target) && !btn.contains(e.target)) {
+        panel.style.display = 'none';
+        btn.setAttribute('aria-expanded', 'false');}
+      });
+  </script>
+  
+
+</body>
+</html>

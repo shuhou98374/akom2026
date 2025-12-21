@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>おみくじさいと2026</title>
+
+  <!-- 外部CSS -->
+  <link rel="stylesheet" href="C:\Users\kuros\OneDrive\ドキュメント\2026 あけおめサイト\style2026.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Yuji+Syuku&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Sawarabi+Mincho&family=Yuji+Syuku&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a class="mark" href="index2026.html">🐴</a>
+        <a class="site-title" href="index2026.html">おみくじさいと2026</a>
+      </div>
+
+      <nav>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navPanel" aria-label="メニューを開く">
+          <span class="menu-icon"></span>
+        </button>
+        <div class="nav-panel" id="navPanel" role="menu">
+          <a href="index2026.html" role="menuitem">ホーム</a>
+          <a href="kuji2026.html" role="menuitem">おみくじをひく</a>
+          <a href="index2026.html#contents_id" role="menuitem">コンテンツ</a>
+          <a href="index2026.html#contact" role="menuitem">SNS</a>
+        </div>
+      </nav>
+    </header>
+<br>
+    <main>
+
+        <section aria-labelledby="kuji6">
+            <div class="card">
+                <div class="Kuji_s_title">第六番</div>
+                <div  class="Kuji_title">凶</div>
+
+                <hr class="hr1"><br>
+
+                <div class="s_title">🌟全体運</div><br>
+                <div class="meta">
+                    自分の気持ちに余裕がなくなり、<br>
+                    イライラ、ピリピリしてしまうことが多そうです。<br><br>
+                    でもこれは良いことが起こる前触れとも言えるでしょう。<br><br>
+                    むすっとした顔になりそうになったら<br>
+                    意識的に口角を上げたり<br>
+                    楽しいことを考えてみましょう。
+
+                </div>
+                <br><hr class="hr1"><br>
+
+                <div class="s_title">💰金運</div><br>
+                <div class="meta">
+                    周りに流されて欲しくもないものを買ってしまったり、<br>
+                    付き合いの食事が増えてしまったりで<br>
+                    出費がかさみそうです。<br><br>
+                    「週に1回しか外食をしない」など<br>
+                    ある程度の制約を自分で決めて<br>
+                    達成できるようにするのが<br>
+                    一つの手かもしれません。
+
+                </div>
+                <br><hr class="hr1"><br>
+
+                <div class="s_title">📝仕事/勉強運</div><br>
+                <div class="meta">
+                    1人で進められる業務や、<br>
+                    勉強を行う時間を<br>
+                    少し増やしてみると<br>
+                    集中ができて<br>
+                    自分の身になりやすくなるかもしれません。
+
+                </div>
+                <br><hr class="hr1"><br>                
+
+                <div class="s_title">💘恋愛運</div><br>
+                <div class="meta">
+                    自分を主張しすぎるのは禁物です。<br><br>
+                    相手の気持ちも考えて<br>
+                    接するようにしましょう。<br><br>
+                    すでにお付き合い等をしている方は<br>
+                    「親しき中にも礼儀あり」を大切にしてみましょう。
+
+                    
+                </div>
+                <br><hr class="hr1"><br>
+
+                <div class="s_title">🏃‍➡️おすすめ行動</div><br>
+                <div class="meta">
+                    何かを作成・創作する(絵や家具、音楽、文章なんでも！)
+                    
+                </div>
+                <br><hr class="hr1"><br>
+
+                <div class="s_title">🖌️ラッキーカラー</div><br>
+                <div class="meta">
+                    スカイブルー（水色）　<span style="color: #a0d8ef;">●</span>
+                    
+                </div>
+                <br><hr class="hr1"><br>
+                <br>
+                <a href="index2026.html" class="modal-ok">ホームに戻る</a><br><br>
+                <a href="kuji2026.html" class="meta">くじを引き直す</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+      OMIKUJI-SITE&ensp;2026
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const panel = document.getElementById('navPanel');
+
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      panel.style.display = expanded ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!panel.contains(e.target) && !btn.contains(e.target)) {
+        panel.style.display = 'none';
+        btn.setAttribute('aria-expanded', 'false');}
+      });
+  </script>
+  
+
+</body>
+</html>
